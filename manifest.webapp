@@ -1,0 +1,12 @@
+{
+    "name": "Browse",
+    "type": "certified",
+    "description": "Web browser",
+    "launch_path": "/index.html",
+    "icons": {
+        "55": "/style/icons/browse.svg"
+    },
+    "permissions": {
+        "browser": {}
+    }
+}

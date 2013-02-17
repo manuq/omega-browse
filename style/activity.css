@@ -1,0 +1,41 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+iframe {
+    position: absolute;
+    top: 55px;
+    width: 100%;
+    height: calc(100% - 55px);
+    border: none;
+}
+
+menu[type="toolbar"] {
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    height: 55px;
+    margin: 0;
+    padding: 0;
+}
+
+menu[type="toolbar"] button {
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 55px;
+    height: 55px;
+    float: left;
+}
+
+#location-input {
+    width: calc(100% - 200px);
+    height: 30px;
+    margin: 12px 35px 13px 35px;
+    text-overflow: ellipsis;
+}
