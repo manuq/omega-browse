@@ -22,8 +22,19 @@ define(function(require) {
         webView.goForward()
     });
 
+    function getURLFromInput(input) {
+        if (input.indexOf("http://") == 0 || input.indexOf("https://") == 0) {
+            return  input;
+        } else if (input.indexOf(".") != -1) {
+            return "http://" + input;
+        } else {
+            return "http://www.google.com/search?q=" + input;
+        }
+    }
+
     locationInput.addEventListener("change", function(event) {
-        webView.src = "http://" + locationInput.value;
+        webView.src = getURLFromInput(locationInput.value);
         event.preventDefault();
     });
+
 });
