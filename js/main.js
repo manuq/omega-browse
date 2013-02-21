@@ -6,12 +6,12 @@ define(function(require) {
     var forwardButton = document.getElementById("forward-button");
     var locationInput = document.getElementById("location-input");
 
-    icons.loadWithName("actions/go-left", function(data) {
-        backButton.style.backgroundImage = data;
+    icons.load({"name": "actions/go-left"}, function(data) {
+        backButton.style.backgroundImage = "url('" + data + "')";
     });
 
-    icons.loadWithName("actions/go-right", function(data) {
-        forwardButton.style.backgroundImage = data;
+    icons.load({"name": "actions/go-right"}, function(data) {
+        forwardButton.style.backgroundImage = "url('" + data + "')";
     });
 
     backButton.addEventListener("click", function() {
