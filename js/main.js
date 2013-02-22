@@ -5,6 +5,7 @@ define(function(require) {
     var backButton = document.getElementById("back-button");
     var forwardButton = document.getElementById("forward-button");
     var locationInput = document.getElementById("location-input");
+    var throbber = document.getElementById("throbber");
 
     icons.load({"name": "actions/go-left"}, function(data) {
         backButton.style.backgroundImage = "url('" + data + "')";
@@ -35,6 +36,14 @@ define(function(require) {
     locationInput.addEventListener("change", function(event) {
         webView.src = getURLFromInput(locationInput.value);
         event.preventDefault();
+    });
+
+    webView.addEventListener("mozbrowserloadstart", function() {
+	throbber.classList.add('loading');
+    });
+
+    webView.addEventListener("mozbrowserloadend", function() {
+	throbber.classList.remove('loading');
     });
 
 });
