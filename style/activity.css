@@ -41,9 +41,18 @@ menu[type="toolbar"] button:active {
     background-color: white;
 }
 
+input[type="text"] {
+    height: 30px;
+    border-radius: 15px;
+    background-color: #E5E5E5;
+}
+
+input[type="text"]:focus {
+    background-color: white;
+}
+
 #location-input {
     width: calc(100% - 200px);
-    height: 30px;
     margin: 12px 35px 13px 35px;
     text-overflow: ellipsis;
 }
