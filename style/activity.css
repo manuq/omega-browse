@@ -38,7 +38,7 @@ menu[type="toolbar"] button:hover {
 }
 
 menu[type="toolbar"] button:active {
-    background-color: white;
+    background-color: grey;
 }
 
 input[type="text"] {
