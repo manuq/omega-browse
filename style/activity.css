@@ -33,6 +33,14 @@ menu[type="toolbar"] button {
     float: left;
 }
 
+menu[type="toolbar"] button:hover {
+    background-color: grey;
+}
+
+menu[type="toolbar"] button:active {
+    background-color: white;
+}
+
 #location-input {
     width: calc(100% - 200px);
     height: 30px;
