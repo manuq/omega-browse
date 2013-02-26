@@ -13,7 +13,7 @@ iframe {
 
 menu[type="toolbar"] {
     position: absolute;
-    background-color: black;
+    background-color: #282828;
     width: 100%;
     height: 55px;
     margin: 0;
@@ -34,7 +34,7 @@ menu[type="toolbar"] button {
 }
 
 menu[type="toolbar"] button:hover {
-    background-color: grey;
+    background-color: black;
 }
 
 menu[type="toolbar"] button:active {
