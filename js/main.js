@@ -1,5 +1,5 @@
 define(function(require) {
-    var artwork = require("xi-artwork/icons");
+    var icons = require("xi-graphics/icons");
 
     var webView = document.getElementById("web-view");
     var backButton = document.getElementById("back-button");

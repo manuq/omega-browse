@@ -3,7 +3,7 @@
   "volo": {
     "baseUrl": "lib",
     "dependencies": {
-      "xi-artwork": "github:ayopa/xi-artwork/master"
+      "xi-graphics": "github:ayopa/xi-graphics/master"
     }
   }
 }
