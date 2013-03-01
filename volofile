@@ -1,0 +1,3 @@
+module.exports = {
+    "update-artwork": require("xi-artwork/update-artwork")
+};
